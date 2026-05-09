@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand-block">
+      <a routerLink="/" class="brand">
+        <app-brand-mark [size]="24" />
+        <span class="brand-text">{{ brand.productName }}</span>
+      </a>
+      <p class="muted">A product of {{ brand.legalName }}.</p>
+      <p class="muted small">{{ brand.hqCity }}</p>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <h3 class="col-title">Product</h3>
+        <ul>
+          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="col-title">Legal</h3>
+        <ul>
+          <li><a routerLink="/terms">Terms of Service</a></li>
+          <li><a routerLink="/privacy">Privacy Policy</a></li>
+          <li><a routerLink="/risk-disclosure">Risk Disclosure</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="col-title">Contact</h3>
+        <ul>
+          <li><a [href]="mailto">{{ brand.contactEmail }}</a></li>
+          <li class="muted small">{{ brand.mailingAddress }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container legal-bar">
+    <p class="muted small">
+      &copy; {{ brand.copyrightYear }} {{ brand.legalName }}. All rights reserved.
+    </p>
+    <p class="muted small disclaimer">
+      {{ brand.legalName }} provides software tools only. Nothing on this site is investment advice.
+      Cryptocurrency trading involves substantial risk of loss.
+    </p>
+  </div>
+</footer>

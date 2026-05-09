@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  /*
+   * The home component is lazy-loaded, so on first render <main> is empty
+   * and the footer renders right under the header — then it gets pushed
+   * thousands of pixels down once the home chunk arrives, registering as a
+   * massive CLS. Reserving 100vh keeps the footer below the fold during
+   * initial paint.
+   */
+  min-height: 100vh;
+}

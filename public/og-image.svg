@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(100,140)">
+    <g transform="scale(3.6)">
+      <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="none" stroke="url(#brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 17L12 22L22 17" fill="none" stroke="url(#brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 12L12 17L22 12" fill="none" stroke="url(#brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <text x="100" y="370" font-family="Inter, -apple-system, system-ui, sans-serif"
+        font-size="76" font-weight="700" fill="#f8fafc" letter-spacing="-2">
+    Lowcountry Grid
+  </text>
+  <text x="100" y="430" font-family="Inter, -apple-system, system-ui, sans-serif"
+        font-size="34" font-weight="500" fill="#cbd5e1">
+    Automated grid trading for Kraken &amp; Coinbase.
+  </text>
+  <text x="100" y="475" font-family="Inter, -apple-system, system-ui, sans-serif"
+        font-size="24" font-weight="500" fill="#8b5cf6">
+    Coming soon &middot; Lowcountry Investing, LLC
+  </text>
+
+  <g transform="translate(100,540)">
+    <rect width="14" height="14" rx="7" fill="#f59e0b"/>
+    <text x="26" y="12" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#94a3b8">
+      In private development
+    </text>
+  </g>
+</svg>
