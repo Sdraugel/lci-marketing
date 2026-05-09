@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lowcountryinvesting.com/</loc>
+    <loc>https://sdraugel.github.io/lci-marketing/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lowcountryinvesting.com/terms</loc>
+    <loc>https://sdraugel.github.io/lci-marketing/terms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lowcountryinvesting.com/privacy</loc>
+    <loc>https://sdraugel.github.io/lci-marketing/privacy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lowcountryinvesting.com/risk-disclosure</loc>
+    <loc>https://sdraugel.github.io/lci-marketing/risk-disclosure</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -54,6 +54,12 @@ npx lighthouse http://127.0.0.1:4173/ --only-categories=performance,accessibilit
 
 The repo includes [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml), which builds on every push to `main` and deploys via the official `actions/deploy-pages@v4` flow.
 
+The site is currently configured to live at:
+
+> **<https://sdraugel.github.io/lci-marketing/>**
+
+`package.json` builds with `--base-href=/lci-marketing/`. There is no `public/CNAME`, so Pages serves at the default github.io URL.
+
 ### One-time setup
 
 1. **Create the GitHub repo** (the project root, `lci-marketing/`, is the repo root):
@@ -64,35 +70,19 @@ The repo includes [`.github/workflows/deploy.yml`](./.github/workflows/deploy.ym
    git push -u origin main
    ```
 
-   …or create the repo on github.com, then:
-
-   ```bash
-   git remote add origin git@github.com:<your-user>/lci-marketing.git
-   git branch -M main
-   git push -u origin main
-   ```
-
 2. **Enable GitHub Pages**: repo **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow will run on the next push.
 
-3. **Point DNS at GitHub Pages**. The `public/CNAME` file declares `lowcountryinvesting.com`, so configure DNS at your registrar:
+3. Wait ~1–2 minutes for the workflow to finish, then visit <https://sdraugel.github.io/lci-marketing/>.
 
-   | Record | Host | Value |
-   | --- | --- | --- |
-   | A | `@` | `185.199.108.153` |
-   | A | `@` | `185.199.109.153` |
-   | A | `@` | `185.199.110.153` |
-   | A | `@` | `185.199.111.153` |
-   | CNAME | `www` | `<your-user>.github.io` |
+### Switching to a custom domain later
 
-   These four A records and the `www` CNAME are documented in [GitHub Pages docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+When you buy a real domain (e.g. `lowcountryinvesting.com`):
 
-4. **Custom domain in Pages settings**. Settings → Pages → Custom domain → enter `lowcountryinvesting.com`. Tick "Enforce HTTPS" once the certificate provisions.
-
-5. **SSL certificate.** GitHub provisions a Let's Encrypt certificate automatically once DNS resolves. Expect a **10–30 minute delay** before "Enforce HTTPS" can be enabled. If it stays unavailable longer than 24h, remove and re-add the custom domain in the Pages settings to retrigger provisioning.
-
-### If you skip the custom domain
-
-Edit `package.json` `build:pages` script to set `--base-href=/lci-marketing/` (or whatever the repo path is) and remove `public/CNAME`. The site will live at `https://<your-user>.github.io/lci-marketing/`.
+1. Recreate `public/CNAME` containing one line: `lowcountryinvesting.com`.
+2. In `package.json`, change both `build` and `build:pages` scripts to use `--base-href=/` instead of `/lci-marketing/`.
+3. In `src/index.html`, `public/sitemap.xml`, `public/robots.txt`, and `src/app/config/brand.ts` (`domain` field), replace every `https://sdraugel.github.io/lci-marketing/` with `https://<your-domain>/`.
+4. At your DNS registrar, add four A records on `@` pointing to `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`, plus a CNAME on `www` pointing to `sdraugel.github.io`.
+5. **Settings → Pages → Custom domain** → enter the domain → Save. Wait 10–30 minutes for the Let's Encrypt cert, then tick **Enforce HTTPS**.
 
 ## Project layout
 

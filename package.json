@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && node scripts/copy-404.mjs",
-    "build:pages": "ng build --base-href=/ && node scripts/copy-404.mjs",
+    "build": "ng build --base-href=/lci-marketing/ && node scripts/copy-404.mjs",
+    "build:pages": "ng build --base-href=/lci-marketing/ && node scripts/copy-404.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "preview": "npx http-server dist/lci-marketing/browser -p 4173 -c-1"

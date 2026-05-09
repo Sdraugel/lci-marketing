@@ -11,13 +11,12 @@ Things you (the human) need to confirm, fill in, or get reviewed before the site
 
 ### Contact email
 - **File:** [`src/app/config/brand.ts`](src/app/config/brand.ts) → `contactEmail`
-- **Current:** `hello@lowcountryinvesting.com`
-- **Action:** Confirm the address exists and that mail to it actually reaches you. If different, change it here — header, footer, terms, and privacy all read from this constant.
+- **Current:** `sdraugel@gmail.com` (your personal address — used until a company email is set up).
+- **Action:** Once a real company inbox exists (e.g. via Google Workspace or Fastmail on the company domain), update this constant. Header, footer, terms, and privacy all read from it.
 
-### Custom domain
-- **File:** [`public/CNAME`](public/CNAME)
-- **Current:** `lowcountryinvesting.com`
-- **Action:** Confirm you own this domain and have access to its DNS. If you're going to launch under a different domain, change `CNAME`, the `<link rel="canonical">` and og/twitter URLs in [`src/index.html`](src/index.html), the `<loc>` entries in [`public/sitemap.xml`](public/sitemap.xml), and the `Sitemap:` URL in [`public/robots.txt`](public/robots.txt).
+### Custom domain (Stripe may want one)
+- **Current:** Site lives at `https://sdraugel.github.io/lci-marketing/` — the free Pages URL. No domain purchased yet, no `public/CNAME`.
+- **Action:** Stripe's account-verification reviewers generally accept any live URL, but a custom domain on the legal entity name (e.g. `lowcountryinvesting.com`) reads as more legitimate and is worth the ~$10–15/year. When you're ready, follow the "Switching to a custom domain later" section in [`README.md`](README.md). Five files change: `public/CNAME`, `package.json` (base-href), `src/index.html` (canonical / og / twitter), `public/sitemap.xml`, `public/robots.txt`, and `src/app/config/brand.ts`.
 
 ### Legal review of all three legal pages
 - **Files:**
