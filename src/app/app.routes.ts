@@ -11,10 +11,10 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'FinWatch — Automated Grid Trading for Kraken & Coinbase',
+    title: 'FinWatch — Automated Crypto Trading for Kraken & Coinbase',
     data: {
       description:
-        'Automated grid trading software for cryptocurrency traders. Connect your Kraken or Coinbase account, set your strategy, pay only on realized profit. Coming soon from Lowcountry Investing, LLC.',
+        'Automated cryptocurrency trading software. Connect your Kraken or Coinbase account, choose a strategy, pay only on realized profit. Coming soon from Lowcountry Investing, LLC.',
     },
   },
   {
@@ -22,7 +22,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/terms/terms.component').then(m => m.TermsComponent),
     title: 'Terms of Service — Lowcountry Investing, LLC',
     data: {
-      description: 'Terms of Service for FinWatch, the automated grid trading software provided by Lowcountry Investing, LLC.',
+      description: 'Terms of Service for FinWatch, the automated cryptocurrency trading software provided by Lowcountry Investing, LLC.',
     },
   },
   {

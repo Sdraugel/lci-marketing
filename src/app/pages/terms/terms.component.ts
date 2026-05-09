@@ -18,7 +18,7 @@ import { BRAND } from '../../config/brand';
 
       <h2>1. Nature of the Service</h2>
       <p>
-        {{ brand.productName }} is software that automates grid trading strategies on cryptocurrency
+        {{ brand.productName }} is software that automates cryptocurrency trading strategies on
         exchanges that you connect to your account. <strong>We are a software provider only.</strong>
         We are not a broker, exchange, custodian, money transmitter, investment adviser, or
         financial institution. Nothing in the Service constitutes investment, legal, or tax advice.
@@ -40,7 +40,7 @@ import { BRAND } from '../../config/brand';
       </p>
       <ul>
         <li>API keys you provide must <strong>not</strong> have withdrawal permission. The Service does not request and will not accept keys with withdrawal capability.</li>
-        <li>You retain custody of all funds in your exchange account at all times. We never custody, hold, or transmit your funds.</li>
+        <li>You retain custody of all funds in your exchange account at all times. We never take custody of, hold, or transmit your funds.</li>
         <li>You are responsible for keeping your exchange account in good standing and for any exchange-side fees, limits, or restrictions.</li>
       </ul>
 
@@ -56,14 +56,14 @@ import { BRAND } from '../../config/brand';
       <h2>5. Fees and Billing</h2>
       <p>
         The Service charges a performance fee equal to {{ brand.performanceFeePercent }}% of
-        realized profit on closed grid cycles, calculated in U.S. dollar equivalent terms after
+        realized profit on closed trades, calculated in U.S. dollar equivalent terms after
         exchange fees. Fees are aggregated monthly and billed via Stripe to the payment method on
         file. By providing a payment method, you authorize {{ brand.legalName }} (and Stripe as
         our processor) to charge that method for fees due.
       </p>
       <ul>
         <li><strong>No subscription fees.</strong> The performance fee is the only fee charged by us.</li>
-        <li><strong>No fees on losing cycles, open positions, or paper trades.</strong></li>
+        <li><strong>No fees on losing trades, open positions, or paper trades.</strong></li>
         <li><strong>Payment method required for live trading.</strong> Live (non-paper) strategies require a valid payment method to remain enabled, so monthly invoices can settle.</li>
       </ul>
 

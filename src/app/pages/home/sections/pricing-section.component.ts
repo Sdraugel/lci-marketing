@@ -16,21 +16,21 @@ import { BRAND } from '../../../config/brand';
         <div class="card pricing-card">
           <div class="rate">
             <span class="number">{{ brand.performanceFeePercent }}<span class="percent">%</span></span>
-            <span class="rate-label">of realized profit on closed grid cycles</span>
+            <span class="rate-label">of realized profit on closed trades</span>
           </div>
 
           <ul class="bullets">
             <li>
               <strong>Billed monthly via Stripe.</strong>
-              Cards or ACH. Statements list every closed cycle and the exact USD-equivalent profit it produced.
+              Cards or ACH. Statements list every closed trade and the exact USD-equivalent profit it produced.
             </li>
             <li>
               <strong>No subscription, no platform fee.</strong>
-              You only pay when a buy / sell pair closes in the green.
+              You only pay when a trade closes in the green.
             </li>
             <li>
-              <strong>No fees on losing cycles, open positions, or paper trades.</strong>
-              If a cycle never closes, we never charge for it.
+              <strong>No fees on losing trades, open positions, or paper trades.</strong>
+              If a trade never closes, we never charge for it.
             </li>
             <li>
               <strong>No hidden costs.</strong>
@@ -40,7 +40,7 @@ import { BRAND } from '../../../config/brand';
           </ul>
 
           <p class="fine-print muted small">
-            A valid payment method is required to run live (non-paper) strategies, so cycle-end
+            A valid payment method is required to run live (non-paper) strategies, so monthly
             invoices can settle automatically.
           </p>
         </div>

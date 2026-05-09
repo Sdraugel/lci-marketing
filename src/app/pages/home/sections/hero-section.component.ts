@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 /*
- * Headline alternates considered:
- *   1. "Automated grid trading for Kraken and Coinbase" (chosen — concrete, names exchanges)
- *   2. "Grid trading on autopilot. Custody stays with you."
- *   3. "Run a grid strategy on your own exchange account."
+ * Headline alternates considered (deliberately strategy-agnostic — the
+ * underlying algorithms are proprietary and stay out of the marketing copy):
+ *   1. "Automated cryptocurrency trading for Kraken and Coinbase" (chosen — concrete, names exchanges)
+ *   2. "Hands-off crypto trading. Custody stays with you."
+ *   3. "Run trading algorithms on your own exchange account."
  */
 @Component({
   selector: 'app-hero-section',
@@ -19,14 +20,14 @@ import { BRAND } from '../../../config/brand';
             Coming soon &mdash; currently in private development
           </span>
           <h1 id="hero-heading">
-            Automated grid trading for
+            Automated cryptocurrency trading for
             <span class="accent">Kraken</span> and
             <span class="accent">Coinbase</span>.
           </h1>
           <p class="lede">
-            {{ brand.productName }} runs grid strategies on your own exchange account.
-            You keep custody of your funds. We charge a {{ brand.performanceFeePercent }}% fee
-            only when a trade closes in profit.
+            {{ brand.productName }} runs trading algorithms on your own exchange
+            account. You keep custody of your funds. We charge a {{ brand.performanceFeePercent }}%
+            fee only when a trade closes in profit.
           </p>
           <div class="cta-row">
             <a class="btn" href="#how-it-works">Learn more</a>
@@ -37,19 +38,30 @@ import { BRAND } from '../../../config/brand';
         <aside class="hero-card" aria-hidden="true">
           <div class="card mock">
             <div class="mock-header">
-              <span class="mock-pair">BTC / USD</span>
+              <span class="mock-pair">Account overview</span>
               <span class="mock-status">Live</span>
             </div>
-            <div class="mock-grid">
-              <div class="row sell">Sell &nbsp;<strong>$72,400</strong> &nbsp;&middot;&nbsp; +0.4%</div>
-              <div class="row sell">Sell &nbsp;<strong>$71,800</strong></div>
-              <div class="row mid">Mid &nbsp;<strong>$71,250</strong></div>
-              <div class="row buy">Buy  &nbsp;<strong>$70,650</strong></div>
-              <div class="row buy">Buy  &nbsp;<strong>$70,050</strong> &nbsp;&middot;&nbsp; filled</div>
-            </div>
+            <ul class="mock-stats">
+              <li>
+                <span class="label">Realized P&amp;L (30d)</span>
+                <strong class="value text-success">+$1,284.50</strong>
+              </li>
+              <li>
+                <span class="label">Win rate</span>
+                <strong class="value">64.2%</strong>
+              </li>
+              <li>
+                <span class="label">Open positions</span>
+                <strong class="value">3</strong>
+              </li>
+              <li>
+                <span class="label">Active strategies</span>
+                <strong class="value">2</strong>
+              </li>
+            </ul>
             <div class="mock-footer">
-              <span>Realized PnL</span>
-              <strong class="text-success">+$284.12</strong>
+              <span>Connected to Kraken</span>
+              <span class="muted">Last update 2s ago</span>
             </div>
           </div>
         </aside>

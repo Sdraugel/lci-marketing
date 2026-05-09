@@ -18,7 +18,7 @@ interface Step {
           <h2 id="how-heading">From API key to performance fee in four steps.</h2>
           <p class="muted">
             {{ brand.productName }} is software that runs on top of your exchange account.
-            We never custody your money. You stay in control.
+            We never take custody of your funds. You stay in control.
           </p>
         </header>
 
@@ -47,21 +47,21 @@ export class HowItWorksSectionComponent {
     },
     {
       n: '02',
-      title: 'Configure a strategy',
+      title: 'Choose a strategy and allocate funds',
       body:
-        'Set the price range, the dollar allocation, and the number of grid levels. Choose static or trailing. Run it on paper first if you want to see how it behaves.',
+        'Pick a built-in strategy, choose the trading pair, and decide how much capital to allocate. Run it on paper first if you want to see how it behaves before risking real money.',
     },
     {
       n: '03',
       title: 'We run it on your account',
       body:
-        `${BRAND.productName} places paired buy / sell orders at each grid level on your exchange. The orders, the balances, and the custody all stay on Kraken or Coinbase. Watch live PnL from the dashboard.`,
+        `${BRAND.productName} places orders through your exchange API on your behalf. The orders, the balances, and the custody all stay on Kraken or Coinbase. Watch live PnL from the dashboard.`,
     },
     {
       n: '04',
       title: 'Pay only when you profit',
       body:
-        '3% of realized profit on closed grid cycles, billed monthly via Stripe. No subscription. No fees on losing cycles, open positions, or paper trades.',
+        `${BRAND.performanceFeePercent}% of realized profit on closed trades, billed monthly via Stripe. No subscription. No fees on losing trades, open positions, or paper trades.`,
     },
   ];
 }

@@ -46,11 +46,11 @@ export class FaqSectionComponent {
     },
     {
       q: 'What happens if I lose money on a trade?',
-      a: 'No fee. Performance fees are only charged when a grid cycle closes in profit, in USD-equivalent terms. Losing cycles, open positions, and paper trades never produce a fee.',
+      a: 'No fee. Performance fees apply only when a trade closes in profit, in USD-equivalent terms. Losing trades, open positions, and paper trades never produce a fee.',
     },
     {
       q: 'How is the fee calculated?',
-      a: `${BRAND.performanceFeePercent}% of realized profit on each closed grid cycle — that is, when a buy fills, then the matching sell fills, and the round-trip is positive in USD terms after exchange fees. Fees are summed across all closed cycles in a billing month and charged via Stripe at month end.`,
+      a: `${BRAND.performanceFeePercent}% of realized profit on each closed trade — that is, when an entry fills and the matching exit fills, and the round-trip is positive in USD terms after exchange fees. Fees are summed across all closed trades in a billing month and charged via Stripe at month end.`,
     },
     {
       q: 'When will this be available?',

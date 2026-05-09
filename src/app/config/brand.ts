@@ -18,6 +18,6 @@ export const BRAND = {
   governingState: 'South Carolina, USA',
 
   exchanges: ['Kraken', 'Coinbase Advanced Trade'] as const,
-  performanceFeePercent: 3,
+  performanceFeePercent: 10,
   copyrightYear: 2026,
 } as const;

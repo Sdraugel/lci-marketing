@@ -28,11 +28,12 @@ import { BRAND } from '../../config/brand';
 
       <h2>2. Strategy Risk</h2>
       <p>
-        Grid trading strategies place paired buy and sell orders across a price range. Grid
-        strategies can <strong>lose money in trending markets</strong>, particularly when price
-        breaks below the configured lower bound (leaving filled buys unmatched) or moves rapidly
-        in either direction. Trailing grids reduce but do not eliminate this risk. The behavior
-        of any strategy depends entirely on parameters you choose.
+        Algorithmic trading strategies enter and exit positions automatically based on rules.
+        Any algorithm can <strong>lose money under adverse market conditions</strong> &mdash;
+        for example, sharp trends, sudden volatility, low-liquidity events, exchange outages,
+        or unusual market regimes the strategy was not designed for. Past performance of any
+        strategy does not predict future results. The outcome of any strategy depends on the
+        market conditions it encounters and on the parameters you choose.
       </p>
 
       <h2>3. Operational and Software Risk</h2>
@@ -50,7 +51,7 @@ import { BRAND } from '../../config/brand';
       <h2>4. Customer Responsibility</h2>
       <p>
         <strong>You are solely responsible</strong> for the trading decisions and configurations
-        you make in {{ brand.productName }}, including the price range of grids, the amount of
+        you make in {{ brand.productName }}, including the strategy you select, the amount of
         capital allocated, the choice of trading pair, and the choice to enable or disable any
         strategy. {{ brand.legalName }} provides software tools; we do not advise on what to
         trade, how much to allocate, or when to start or stop a strategy.
