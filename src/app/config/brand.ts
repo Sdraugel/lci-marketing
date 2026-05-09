@@ -5,8 +5,8 @@
 
 export const BRAND = {
   legalName: 'Lowcountry Investing, LLC',
-  productName: 'Lowcountry Grid',
-  shortName: 'Lowcountry Grid',
+  productName: 'FinWatch',
+  shortName: 'FinWatch',
   // Hosted at GitHub Pages sub-path until a real domain is acquired.
   domain: 'sdraugel.github.io/lci-marketing',
 

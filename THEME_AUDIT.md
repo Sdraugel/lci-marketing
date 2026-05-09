@@ -251,5 +251,5 @@ The `--text-muted` color is still defined in tokens (matching finwatch-ui) but i
 These are not in finwatch-ui (it's product UI for a different working name). The marketing site introduces:
 
 - **Legal entity**: Lowcountry Investing, LLC
-- **Product working name**: Lowcountry Grid (stored as a single config constant — see `src/app/config/brand.ts` once scaffolded)
+- **Product working name**: FinWatch (stored as a single config constant — see `src/app/config/brand.ts`)
 - The dark slate + indigo/violet visual identity carries over from finwatch-ui to keep the family resemblance.

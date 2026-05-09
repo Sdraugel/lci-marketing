@@ -55,7 +55,7 @@ export class HowItWorksSectionComponent {
       n: '03',
       title: 'We run it on your account',
       body:
-        'Lowcountry Grid places paired buy / sell orders at each grid level on your exchange. The orders, the balances, and the custody all stay on Kraken or Coinbase. Watch live PnL from the dashboard.',
+        `${BRAND.productName} places paired buy / sell orders at each grid level on your exchange. The orders, the balances, and the custody all stay on Kraken or Coinbase. Watch live PnL from the dashboard.`,
     },
     {
       n: '04',

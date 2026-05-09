@@ -1,6 +1,6 @@
 # lci-marketing
 
-Temporary "coming soon" marketing site for **Lowcountry Investing, LLC** and the **Lowcountry Grid** product. Single-page Angular 18 SPA + three legal routes (`/terms`, `/privacy`, `/risk-disclosure`) deployed as a static bundle to GitHub Pages.
+Temporary "coming soon" marketing site for **Lowcountry Investing, LLC** and its **FinWatch** product. Single-page Angular 18 SPA + three legal routes (`/terms`, `/privacy`, `/risk-disclosure`) deployed as a static bundle to GitHub Pages.
 
 Primary purpose: satisfy Stripe's account-verification requirement (live website describing the business, products, pricing, and policies). Secondary purpose: let interested visitors know the product is coming. **No email capture, no waitlist, no forms.** This site will be replaced before launch.
 
