@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BrandMarkComponent } from '../brand-mark/brand-mark.component';
 import { BRAND } from '../../config/brand';
@@ -7,6 +7,7 @@ import { BRAND } from '../../config/brand';
     selector: 'app-site-footer',
     imports: [RouterLink, BrandMarkComponent],
     templateUrl: './site-footer.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './site-footer.component.scss'
 })
 export class SiteFooterComponent {

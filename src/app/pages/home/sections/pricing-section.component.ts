@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 @Component({
@@ -46,6 +46,7 @@ import { BRAND } from '../../../config/brand';
       </div>
     </section>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './pricing-section.component.scss',
 })
 export class PricingSectionComponent {

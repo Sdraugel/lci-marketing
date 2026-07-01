@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-legal-page',
@@ -20,6 +20,7 @@ import { Component, Input } from '@angular/core';
       </div>
     </article>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './legal-page.component.scss',
 })
 export class LegalPageComponent {

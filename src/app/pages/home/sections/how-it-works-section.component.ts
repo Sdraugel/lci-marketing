@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 interface Step {
@@ -31,6 +31,7 @@ interface Step {
       </div>
     </section>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './how-it-works-section.component.scss',
 })
 export class HowItWorksSectionComponent {

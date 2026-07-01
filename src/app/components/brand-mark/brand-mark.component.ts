@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-brand-mark',
@@ -20,6 +20,7 @@ import { Component, Input } from '@angular/core';
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: [':host { display: inline-flex; color: var(--primary-color); }'],
 })
 export class BrandMarkComponent {

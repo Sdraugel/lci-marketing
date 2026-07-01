@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { HeroSectionComponent } from './sections/hero-section.component';
 import { HowItWorksSectionComponent } from './sections/how-it-works-section.component';
 import { FeaturesSectionComponent } from './sections/features-section.component';
@@ -14,6 +14,7 @@ import { FaqSectionComponent } from './sections/faq-section.component';
         PricingSectionComponent,
         FaqSectionComponent,
     ],
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `
     <app-hero-section />
     <app-how-it-works-section />

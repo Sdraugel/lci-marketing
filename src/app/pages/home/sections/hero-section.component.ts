@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 /*
@@ -52,6 +52,7 @@ import { BRAND } from '../../../config/brand';
       </div>
     </section>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hero-section.component.scss',
 })
 export class HeroSectionComponent {

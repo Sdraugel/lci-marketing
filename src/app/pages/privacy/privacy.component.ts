@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { LegalPageComponent } from '../legal/legal-page.component';
 import { BRAND } from '../../config/brand';
 
@@ -6,6 +6,7 @@ import { BRAND } from '../../config/brand';
 @Component({
     selector: 'app-privacy',
     imports: [LegalPageComponent],
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `
     <app-legal-page title="Privacy Policy" [effectiveDate]="effectiveDate">
 

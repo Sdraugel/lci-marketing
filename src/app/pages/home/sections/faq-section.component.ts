@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 interface FaqItem {
@@ -27,6 +27,7 @@ interface FaqItem {
       </div>
     </section>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './faq-section.component.scss',
 })
 export class FaqSectionComponent {
