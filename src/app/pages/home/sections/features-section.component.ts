@@ -5,7 +5,7 @@ interface Feature {
   title: string;
   body: string;
   /* d attribute(s) for the icon's <path>. Multiple comma-separated d strings
-     render as multiple paths in the same svg — useful for icons made of
+     render as multiple paths in the same svg, useful for icons made of
      two unrelated strokes. */
   iconPaths: string[];
 }
@@ -13,7 +13,7 @@ interface Feature {
 /*
  * Icons are rendered inline in the template (not via [innerHTML]), because
  * Angular's DOM sanitizer strips the contents of <svg> when assigned through
- * innerHTML — the icon container would render but the strokes would be gone.
+ * innerHTML, so the icon container would render but the strokes would be gone.
  */
 @Component({
   selector: 'app-features-section',
@@ -22,7 +22,6 @@ interface Feature {
     <section id="features" class="section features" aria-labelledby="features-heading">
       <div class="container">
         <header class="section-header">
-          <span class="eyebrow">Features</span>
           <h2 id="features-heading">Built for traders who want hands-off automation without giving up custody.</h2>
         </header>
 
@@ -62,7 +61,7 @@ export class FeaturesSectionComponent {
     },
     {
       title: 'Paper trading',
-      body: 'Run any strategy against live market data with simulated fills. No exchange orders, no money at risk — useful for tuning before going live.',
+      body: 'Run any strategy against live market data with simulated fills. No exchange orders, no money at risk, so you can tune before going live.',
       iconPaths: ['M14 3v4a1 1 0 0 0 1 1h4', 'M5 3h9l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z'],
     },
     {

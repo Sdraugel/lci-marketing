@@ -25,10 +25,7 @@
 }
 
 .brand-text {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .small { font-size: 0.875rem; }
@@ -44,7 +41,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  /* --text-muted only hits 3.07:1 against the footer bg — bump to AA. */
+  /* --text-muted only hits 3.07:1 against the footer bg, so bump to AA. */
   color: var(--text-secondary);
   margin: 0 0 var(--spacing-md) 0;
 }

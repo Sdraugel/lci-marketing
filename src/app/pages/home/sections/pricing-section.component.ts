@@ -8,7 +8,6 @@ import { BRAND } from '../../../config/brand';
     <section id="pricing" class="section pricing" aria-labelledby="pricing-heading">
       <div class="container container-tight">
         <header class="section-header">
-          <span class="eyebrow">Pricing</span>
           <h2 id="pricing-heading">Performance-based, transparent.</h2>
           <p class="muted">We make money only when you do.</p>
         </header>
@@ -34,8 +33,8 @@ import { BRAND } from '../../../config/brand';
             </li>
             <li>
               <strong>No hidden costs.</strong>
-              Exchange trading fees are charged by Kraken or Coinbase directly &mdash;
-              we do not mark them up.
+              Exchange trading fees are charged by Kraken or Coinbase directly.
+              We do not mark them up.
             </li>
           </ul>
 

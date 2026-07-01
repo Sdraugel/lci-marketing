@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
     <article class="legal section">
       <div class="container container-narrow">
         <p class="draft-banner" role="note">
-          DRAFT &mdash; review with attorney before publishing.
+          DRAFT. Review with attorney before publishing.
         </p>
         <header>
           <span class="eyebrow">Legal</span>

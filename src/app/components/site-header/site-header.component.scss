@@ -31,10 +31,7 @@
 .brand:hover { text-decoration: none; color: var(--text-primary); }
 
 .brand-text {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
   font-size: 1.05rem;
 }
 
@@ -82,14 +79,6 @@
   color: var(--text-secondary);
   font-size: 0.8125rem;
   font-weight: 500;
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--warning);
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
 }
 
 @media (max-width: 900px) {
