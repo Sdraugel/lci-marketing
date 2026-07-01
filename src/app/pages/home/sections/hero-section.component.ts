@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { BRAND } from '../../../config/brand';
 
 /*
- * Headline alternates considered (deliberately strategy-agnostic — the
+ * Headline alternates considered (deliberately strategy-agnostic, since the
  * underlying algorithms are proprietary and stay out of the marketing copy):
- *   1. "Automated cryptocurrency trading for Kraken and Coinbase" (chosen — concrete, names exchanges)
+ *   1. "Automated cryptocurrency trading for Kraken and Coinbase" (chosen: concrete, names exchanges)
  *   2. "Hands-off crypto trading. Custody stays with you."
  *   3. "Run trading algorithms on your own exchange account."
  */
@@ -15,10 +15,7 @@ import { BRAND } from '../../../config/brand';
     <section class="hero section" aria-labelledby="hero-heading">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="status-line">
-            <span class="dot" aria-hidden="true"></span>
-            Coming soon &mdash; currently in private development
-          </span>
+          <span class="hero-eyebrow">Coming soon, in private development</span>
           <h1 id="hero-heading">
             Automated cryptocurrency trading for
             <span class="accent">Kraken</span> and
@@ -35,35 +32,22 @@ import { BRAND } from '../../../config/brand';
           </div>
         </div>
 
-        <aside class="hero-card" aria-hidden="true">
-          <div class="card mock">
-            <div class="mock-header">
-              <span class="mock-pair">Account overview</span>
-              <span class="mock-status">Live</span>
-            </div>
-            <ul class="mock-stats">
-              <li>
-                <span class="label">Realized P&amp;L (30d)</span>
-                <strong class="value text-success">+$1,284.50</strong>
-              </li>
-              <li>
-                <span class="label">Win rate</span>
-                <strong class="value">64.2%</strong>
-              </li>
-              <li>
-                <span class="label">Open positions</span>
-                <strong class="value">3</strong>
-              </li>
-              <li>
-                <span class="label">Active strategies</span>
-                <strong class="value">2</strong>
-              </li>
-            </ul>
-            <div class="mock-footer">
-              <span>Connected to Kraken</span>
-              <span class="muted">Last update 2s ago</span>
-            </div>
-          </div>
+        <aside class="hero-panel" aria-labelledby="custody-heading">
+          <h2 id="custody-heading" class="panel-title">Custody stays with you</h2>
+          <ul class="custody-list">
+            <li>
+              <strong>Read and trade keys only</strong>
+              We connect with API keys that can place orders, nothing more.
+            </li>
+            <li>
+              <strong>No withdraw permission</strong>
+              We never request or accept the ability to move your funds.
+            </li>
+            <li>
+              <strong>Funds never leave the exchange</strong>
+              Balances and custody stay on Kraken or Coinbase, always.
+            </li>
+          </ul>
         </aside>
       </div>
     </section>

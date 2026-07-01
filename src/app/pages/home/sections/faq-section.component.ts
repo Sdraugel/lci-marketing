@@ -13,7 +13,6 @@ interface FaqItem {
     <section id="faq" class="section faq" aria-labelledby="faq-heading">
       <div class="container container-tight">
         <header class="section-header">
-          <span class="eyebrow">FAQ</span>
           <h2 id="faq-heading">Frequently asked questions.</h2>
         </header>
 
@@ -34,7 +33,7 @@ export class FaqSectionComponent {
   items: FaqItem[] = [
     {
       q: 'Is my money safe?',
-      a: `Yes. Your funds stay in your Kraken or Coinbase account at all times. ${BRAND.productName} only ever holds API keys with read and trade permissions — never withdraw permission. We cannot move your funds off the exchange, because we are not authorized to.`,
+      a: `Yes. Your funds stay in your Kraken or Coinbase account at all times. ${BRAND.productName} only ever holds API keys with read and trade permissions, never withdraw permission. We cannot move your funds off the exchange, because we are not authorized to.`,
     },
     {
       q: 'Are you a registered broker or investment adviser?',
@@ -50,11 +49,11 @@ export class FaqSectionComponent {
     },
     {
       q: 'How is the fee calculated?',
-      a: `${BRAND.performanceFeePercent}% of realized profit on each closed trade — that is, when an entry fills and the matching exit fills, and the round-trip is positive in USD terms after exchange fees. Fees are summed across all closed trades in a billing month and charged via Stripe at month end.`,
+      a: `${BRAND.performanceFeePercent}% of realized profit on each closed trade. That is, when an entry fills and the matching exit fills, and the round-trip is positive in USD terms after exchange fees. Fees are summed across all closed trades in a billing month and charged via Stripe at month end.`,
     },
     {
       q: 'When will this be available?',
-      a: `${BRAND.launchWindow}. Sign-ups are not yet open — this site is informational while we finish development.`,
+      a: `${BRAND.launchWindow}. Sign-ups are not yet open. This site is informational while we finish development.`,
     },
     {
       q: 'Where are you based?',

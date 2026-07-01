@@ -10,9 +10,10 @@ export const BRAND = {
   // Hosted at GitHub Pages sub-path until a real domain is acquired.
   domain: 'sdraugel.github.io/lci-marketing',
 
-  // Placeholders flagged in BACKLOG.md — confirm before publishing.
+  // Placeholders flagged in BACKLOG.md, confirm before publishing.
   contactEmail: 'sdraugel@gmail.com',
-  mailingAddress: '[ADDRESS_PLACEHOLDER]',
+  // Mailing locality; a full street address is still pending before publishing.
+  mailingAddress: 'Charleston, South Carolina, USA',
   launchWindow: 'Private beta in 2026',
   hqCity: 'Charleston, South Carolina, USA',
   governingState: 'South Carolina, USA',

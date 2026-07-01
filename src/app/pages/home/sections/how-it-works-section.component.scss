@@ -2,8 +2,7 @@
 
 .section-header {
   max-width: 60ch;
-  margin: 0 auto var(--spacing-2xl) auto;
-  text-align: center;
+  margin: 0 0 var(--spacing-2xl) 0;
 }
 
 .section-header h2 { margin-bottom: var(--spacing-md); }
@@ -15,22 +14,6 @@
   display: grid;
   gap: var(--spacing-lg);
   grid-template-columns: repeat(4, 1fr);
-}
-
-.step {
-  position: relative;
-  padding-top: var(--spacing-2xl);
-}
-
-.step-num {
-  position: absolute;
-  top: var(--spacing-lg);
-  right: var(--spacing-lg);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  /* --text-muted (#64748b) only hits 3.07:1 against bg-card. Use secondary. */
-  color: var(--text-secondary);
 }
 
 .step h3 {

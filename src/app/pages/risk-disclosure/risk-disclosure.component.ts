@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { LegalPageComponent } from '../legal/legal-page.component';
 import { BRAND } from '../../config/brand';
 
-/* DRAFT — REVIEW WITH ATTORNEY BEFORE PUBLISHING */
+/* DRAFT - REVIEW WITH ATTORNEY BEFORE PUBLISHING */
 @Component({
   selector: 'app-risk-disclosure',
   standalone: true,
@@ -29,8 +29,8 @@ import { BRAND } from '../../config/brand';
       <h2>2. Strategy Risk</h2>
       <p>
         Algorithmic trading strategies enter and exit positions automatically based on rules.
-        Any algorithm can <strong>lose money under adverse market conditions</strong> &mdash;
-        for example, sharp trends, sudden volatility, low-liquidity events, exchange outages,
+        Any algorithm can <strong>lose money under adverse market conditions</strong>. For
+        example, sharp trends, sudden volatility, low-liquidity events, exchange outages,
         or unusual market regimes the strategy was not designed for. Past performance of any
         strategy does not predict future results. The outcome of any strategy depends on the
         market conditions it encounters and on the parameters you choose.
@@ -90,5 +90,5 @@ import { BRAND } from '../../config/brand';
 })
 export class RiskDisclosureComponent {
   brand = BRAND;
-  effectiveDate = 'Draft — pending publication';
+  effectiveDate = 'Draft, pending publication';
 }

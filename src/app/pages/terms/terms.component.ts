@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { LegalPageComponent } from '../legal/legal-page.component';
 import { BRAND } from '../../config/brand';
 
-/* DRAFT — REVIEW WITH ATTORNEY BEFORE PUBLISHING */
+/* DRAFT - REVIEW WITH ATTORNEY BEFORE PUBLISHING */
 @Component({
   selector: 'app-terms',
   standalone: true,
@@ -136,5 +136,5 @@ import { BRAND } from '../../config/brand';
 export class TermsComponent {
   brand = BRAND;
   mailto = `mailto:${BRAND.contactEmail}`;
-  effectiveDate = 'Draft — pending publication';
+  effectiveDate = 'Draft, pending publication';
 }
