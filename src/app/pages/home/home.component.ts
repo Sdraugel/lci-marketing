@@ -6,21 +6,20 @@ import { PricingSectionComponent } from './sections/pricing-section.component';
 import { FaqSectionComponent } from './sections/faq-section.component';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    HeroSectionComponent,
-    HowItWorksSectionComponent,
-    FeaturesSectionComponent,
-    PricingSectionComponent,
-    FaqSectionComponent,
-  ],
-  template: `
+    selector: 'app-home',
+    imports: [
+        HeroSectionComponent,
+        HowItWorksSectionComponent,
+        FeaturesSectionComponent,
+        PricingSectionComponent,
+        FaqSectionComponent,
+    ],
+    template: `
     <app-hero-section />
     <app-how-it-works-section />
     <app-features-section />
     <app-pricing-section />
     <app-faq-section />
-  `,
+  `
 })
 export class HomeComponent {}

@@ -4,10 +4,9 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, SiteHeaderComponent, SiteFooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [RouterOutlet, SiteHeaderComponent, SiteFooterComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {}

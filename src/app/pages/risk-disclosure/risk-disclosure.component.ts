@@ -4,10 +4,9 @@ import { BRAND } from '../../config/brand';
 
 /* DRAFT - REVIEW WITH ATTORNEY BEFORE PUBLISHING */
 @Component({
-  selector: 'app-risk-disclosure',
-  standalone: true,
-  imports: [LegalPageComponent],
-  template: `
+    selector: 'app-risk-disclosure',
+    imports: [LegalPageComponent],
+    template: `
     <app-legal-page title="Risk Disclosure" [effectiveDate]="effectiveDate">
 
       <div class="callout">
@@ -86,7 +85,7 @@ import { BRAND } from '../../config/brand';
       </p>
 
     </app-legal-page>
-  `,
+  `
 })
 export class RiskDisclosureComponent {
   brand = BRAND;

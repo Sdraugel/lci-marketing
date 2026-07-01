@@ -4,10 +4,9 @@ import { BRAND } from '../../config/brand';
 
 /* DRAFT - REVIEW WITH ATTORNEY BEFORE PUBLISHING */
 @Component({
-  selector: 'app-terms',
-  standalone: true,
-  imports: [LegalPageComponent],
-  template: `
+    selector: 'app-terms',
+    imports: [LegalPageComponent],
+    template: `
     <app-legal-page title="Terms of Service" [effectiveDate]="effectiveDate">
 
       <p>
@@ -131,7 +130,7 @@ import { BRAND } from '../../config/brand';
       </p>
 
     </app-legal-page>
-  `,
+  `
 })
 export class TermsComponent {
   brand = BRAND;

@@ -4,10 +4,9 @@ import { BRAND } from '../../config/brand';
 
 /* DRAFT - REVIEW WITH ATTORNEY BEFORE PUBLISHING */
 @Component({
-  selector: 'app-privacy',
-  standalone: true,
-  imports: [LegalPageComponent],
-  template: `
+    selector: 'app-privacy',
+    imports: [LegalPageComponent],
+    template: `
     <app-legal-page title="Privacy Policy" [effectiveDate]="effectiveDate">
 
       <p>
@@ -99,7 +98,7 @@ import { BRAND } from '../../config/brand';
       </p>
 
     </app-legal-page>
-  `,
+  `
 })
 export class PrivacyComponent {
   brand = BRAND;
